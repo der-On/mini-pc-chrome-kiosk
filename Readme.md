@@ -5,6 +5,23 @@ In diesem Tutorial richten wir einen [Gigabyte Brix Mini-PC](https://www.amazon.
 Beim Kiosk-Modus ist nur Google-Chrome mit einer offline-Webseite geöffnet. Der Nutzer kann Google-Chrome und die Webseite dabei nicht verlassen.
 Dies ist ideal für den Einsatz bei Austellungen, Messen oder für Werbe- und Informationsdisplays.
 
+- [1. Vorbereitungen](#1-vorbereitungen)
+- [2. Einstellungen öffnen](#2-einstellungen-öffnen)
+- [3. Systemeinstellungen anpassen](#3-systemeinstellungen-anpassen)
+- [4. Geräte](#4-geräte)
+- [5. Netzwerk und Internet](#5-netzwerk-und-internet)
+- [6. Personalisierung](#6-personalisierung)
+- [7. Konten](#7-konten)
+- [8. Erleichterte Bedienung](#8-erleichterte-bedienung)
+- [9. Datenschutz](#9-datenschutz)
+- [10. Update und Sicherheit](#10-update-und-sicherheit)
+- [11. Windows Updater deaktivieren](#11-windows-updater-deaktivieren)
+- [12. Automatische Anmeldung einrichten](#12-automatische-anmeldung-einrichten)
+- [13. Kiosk-Modus einrichten](#13-kiosk-modus-einrichten)
+- [14. PC neu starten](#14-pc-neu-starten)
+- [15. Kiosk-Modus verlassen](#15-kiosk-modus-verlassen)
+- [16. Automatischen Ein-/Ausschalten einrichten (optional)](#16-automatischen-ein-ausschalten-einrichten-optional)
+
 ## 1. Vorbereitungen
 
 ### PC Anschließen
@@ -330,7 +347,7 @@ Jetzt den Eintrag **Windows Update** öffnen ...
 
 ... und bei Startyp **Deaktiviert** auswählen.
 
-## 11. Automatische Anmeldung einrichten
+## 12. Automatische Anmeldung einrichten
 
 ![windows_ausführen.png](./images/windows_ausführen.png)
 
@@ -348,7 +365,7 @@ Hier **netplwiz** eingeben ...
 
 Nun noch den Nutzernamen des anzumeldenden Nutzers und das Passwort eingeben.
 
-## 12. Kiosk-Modus einrichten
+## 13. Kiosk-Modus einrichten
 
 ![windows_ausführen.png](./images/windows_ausführen.png)
 
@@ -380,13 +397,13 @@ Hier nun folgenden Wert eingeben: `C:\Program Files (x86)\Google\Chrome\Applicat
 
 Tausche dabei `file:///D:/build/paintings.html` gegen die HTML-Datei aus, welche du im Kiosk-Modus öffnen möchtest. In diesem Fall befindet sich die Datei auf einem USB-Stick, welcher über den USB 3.0 (eSata) Anschluss am vorderen Teil des Mini-PCs angeschlossen ist. Dies ist zu empfehlen, da dadurch jederzeit die Webseite aktualisiert werden kann, indem einfach nur die Daten auf dem USB-Stick aktualisiert werden.
 
-## 13. PC neu starten
+## 14. PC neu starten
 
 ![neu_starten.png](./images/neu_starten.png)
 
 Nach dem Neustart sollte der Mini-PC automatisch die Webseite im Kiosk-Modus aufrufen. Entferne die USB-Tastatur und schon kann mittels Touchscreen auf der Webseite navigiert werden.
 
-## 14. Kiosk-Modus verlassen
+## 15. Kiosk-Modus verlassen
 
 Schließe zunächst wieder die USB-Tastatur an den Mini-PC an.
 
@@ -416,7 +433,7 @@ Trage unter `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Win
 
 Nach einem Neustart des PCs ist dann der Kiosk-Modus wieder deaktiviert.
 
-## 15. Automatischen Ein-/Ausschalten einrichten (optional)
+## 16. Automatischen Ein-/Ausschalten einrichten (optional)
 
 In einigen Situationen ist es besser, wenn sich der Mini-PC zu einer bestimmten Zeitvon allein ein- und wieder ausschaltet. Dies kann mit Hilfe des BIOS und der Windows Aufgabenverwaltung eingerichtet werden.
 
