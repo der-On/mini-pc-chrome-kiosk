@@ -86,7 +86,39 @@ Bei PC kann nur für die Projektion ermittelt werden, wenn er angeschlossen ist 
 
 Hier alles Apps **aus** schalten.
 
-## 4. Personalisierung
+## 4. Geräte
+
+![Einstellungen_Geräte.png](./images/Einstellungen_Geräte.png)
+
+### Bluetooth
+
+![Einstellungen_Geräte_Bluetooth.png](./images/Einstellungen_Geräte_Bluetooth.png)
+
+Hier Bluetooth **aus** schalten.
+
+### Automatische Wiedergabe
+
+![Einstellungen_Geräte_Automatische_Wiedergabe.png](./images/Einstellungen_Geräte_Automatische_Wiedergabe.png)
+
+Hier Automatische Wiedergabe **aus** schalten.
+
+## 5. Netzwerk und Internet
+
+![Einstellungen_Netzwerk.png](./images/Einstellungen_Netzwerk.png)
+
+### WLAN
+
+![Einstellungen_Netzwerk_WLAN.png](./images/Einstellungen_Netzwerk_WLAN.png)
+
+Hier "WiFi", "Verbindung mit öffentlichen Hotspots", "Onlineregistrierung zum Verbinden verwenden" und "Kostenpflichtige WLAN-Dienste" **aus** schalten.
+
+### Flugzeugmodus
+
+![Einstellungen_Netzwerk_Flugzeugmodus.png](./images/Einstellungen_Netzwerk_Flugzeugmodus.png)
+
+Hier den "Flugzeugmodus" **ein** schalten.
+
+## 6. Personalisierung
 
 ![Einstellungen_Personalisierung.png](./images/Einstellungen_Personalisierung.png)
 
@@ -120,7 +152,7 @@ Anschließend die **Einstellungen für Bildschirmschoner** öffnen ...
 
 Hier alles **aus** schalten.
 
-## 5. Konten
+## 7. Konten
 
 ![Einstellungen_Konten.png](./images/Einstellungen_Konten.png)
 
@@ -138,7 +170,7 @@ Falls noch nicht geschehen, hier ein Kennwort vergeben.
 
 Anschließend die das Anzeigen der Kontodetails auf dem Anmeldebildschirm **aus** schalten.
 
-## 6. Erleichterte Bedienung
+## 8. Erleichterte Bedienung
 
 ![Einstellungen_Erleichterte_Bedienung.png](./images/Einstellungen_Erleichterte_Bedienung.png)
 
@@ -174,7 +206,7 @@ Hier Animationen in Windows, den Windows-Hintergrund sowie Visuelle Benachrichti
 
 Optischen Feedback beim Berühren des Bildschirms und Dunkles, größeren optisches Feedback **ein** schalten.
 
-## 7. Datenschutz
+## 9. Datenschutz
 
 ![Einstellungen_Datenschutz.png](./images/Einstellungen_Datenschutz.png)
 
@@ -262,7 +294,7 @@ Hier Mein Feedback soll von Windows angefordert werden auf **Nie** und Sendet Ih
 
 Hier alles **aus** schalten.
 
-## 8. Update und Sicherheit
+## 10. Update und Sicherheit
 
 ![Einstellungen_Update_Sicherheit.png](./images/Einstellungen_Update_Sicherheit.png)
 
@@ -278,7 +310,7 @@ Hier den Echtzeitschutz **ein** und alles andere **aus** schalten.
 
 Hier, falls noch nicht geschehen, die Windows-Version **aktivieren**.
 
-## 9. Windows Updater deaktivieren
+## 11. Windows Updater deaktivieren
 
 ![windows_ausführen.png](./images/windows_ausführen.png)
 
@@ -298,7 +330,7 @@ Jetzt den Eintrag **Windows Update** öffnen ...
 
 ... und bei Startyp **Deaktiviert** auswählen.
 
-## 10. Automatische Anmeldung einrichten
+## 11. Automatische Anmeldung einrichten
 
 ![windows_ausführen.png](./images/windows_ausführen.png)
 
@@ -316,7 +348,7 @@ Hier **netplwiz** eingeben ...
 
 Nun noch den Nutzernamen des anzumeldenden Nutzers und das Passwort eingeben.
 
-## 11. Kiosk-Modus einrichten
+## 12. Kiosk-Modus einrichten
 
 ![windows_ausführen.png](./images/windows_ausführen.png)
 
@@ -348,13 +380,13 @@ Hier nun folgenden Wert eingeben: `C:\Program Files (x86)\Google\Chrome\Applicat
 
 Tausche dabei `file:///D:/build/paintings.html` gegen die HTML-Datei aus, welche du im Kiosk-Modus öffnen möchtest. In diesem Fall befindet sich die Datei auf einem USB-Stick, welcher über den USB 3.0 (eSata) Anschluss am vorderen Teil des Mini-PCs angeschlossen ist. Dies ist zu empfehlen, da dadurch jederzeit die Webseite aktualisiert werden kann, indem einfach nur die Daten auf dem USB-Stick aktualisiert werden.
 
-## 12. PC neu starten
+## 13. PC neu starten
 
 ![neu_starten.png](./images/neu_starten.png)
 
 Nach dem Neustart sollte der Mini-PC automatisch die Webseite im Kiosk-Modus aufrufen. Entferne die USB-Tastatur und schon kann mittels Touchscreen auf der Webseite navigiert werden.
 
-## 13. Kiosk-Modus verlassen
+## 14. Kiosk-Modus verlassen
 
 Schließe zunächst wieder die USB-Tastatur an den Mini-PC an.
 
@@ -383,3 +415,74 @@ Trage unter `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Win
 ![kiosk_verlassen_6.jpg](./images/kiosk_verlassen_6.jpg)
 
 Nach einem Neustart des PCs ist dann der Kiosk-Modus wieder deaktiviert.
+
+## 15. Automatischen Ein-/Ausschalten einrichten (optional)
+
+In einigen Situationen ist es besser, wenn sich der Mini-PC zu einer bestimmten Zeitvon allein ein- und wieder ausschaltet. Dies kann mit Hilfe des BIOS und der Windows Aufgabenverwaltung eingerichtet werden.
+
+### Automatisches Abschalten einrichten
+
+Öffne zunächst den Explorer ...
+
+![automatisches_Abschalten_1.png](./images/automatisches_Abschalten_1.png)
+
+... und klicke auf "Dieser PC" und dann oben links auf das Symbol für die PC-Eigenschaften.
+
+![automatisches_Abschalten_2.png](./images/automatisches_Abschalten_2.png)
+
+Tippe nun in das Suchfeld "aufgaben" ein und öffne dann "Aufgaben planen".
+
+![automatisches_Abschalten_3.png](./images/automatisches_Abschalten_3.png)
+
+Öffne nun die "Aufgabenplanung".
+
+![automatisches_Abschalten_4.png](./images/automatisches_Abschalten_4.png)
+
+Klicke nun rechts auf "Aufgabe erstellen ..." und nenne die Aufgabe "Shutdown".
+
+![automatisches_Abschalten_5.png](./images/automatisches_Abschalten_5.png)
+
+Wähle nun den Reiter "Trigger" aus, klicke auf "Neu" und wähle hier folgendes aus:
+
+- Aufgabe starten: "Nach einem Zeitplan"
+- Einstellungen: "Täglich"
+- Startzeit: Wähle hier einen Zeitpunkt ca. 15 - 30 min **bevor** der Strom abgeschaltet wird. Damit hat der PC genug Zeit sauber herunter zu fahren.
+
+Bestätige mit "OK".
+
+![automatisches_Abschalten_6.png](./images/automatisches_Abschalten_6.png)
+
+Wähle nun den Reiter "Aktionen" aus, klicke auf "Neu" und gib hier folgendes ein:
+
+- Aktion: "Programm starten"
+- Programm/Skript: `C:\Windows\System32\shutdown.exe`
+- Argumente hinzufügen: `/s`
+
+Bestätige mit "OK".
+
+Das Automatische Abschalten ist nun eingerichtet. Um es zu deaktiveren, kannst du die Erstellte Aufgabe "Shutdown" in der Aufgabenverwaltung löschen oder deaktivieren.
+
+### Automatische Einschalten einrichten
+
+Das Automatische Einschalten erfolgt über das BIOS des Mini-PCs.
+Um in das BIOS zu gelangen, entferne zunächst das USB-Kabel des Touchscreens vom Mini-PCs. Dies ist notwendig, da sonst beim Hochfahren des PCs die USB-Tastatur nicht erkannt wird und man damit nicht in das BIOS gelangen könnte.
+
+Schlate den Mini-PC nun über den Power-Knopf aus und dann wieder an.
+Drücke gleich nachdem der PC wieder angeschalten ist wiederholt die ENTF Taste, um in das BIOS zu gelangen.
+
+![automatisches_Einschalten_1.png](./images/automatisches_Einschalten_1.png)
+
+Wähle nun den Reiter "Advanced" und dann den Eintrag "S5 RTC Wake Settings" aus.
+
+![automatisches_Einschalten_2.png](./images/automatisches_Einschalten_2.png)
+
+Stelle hier den Wert von "Disabled" auf "Fixed Time".
+
+![automatisches_Einschalten_3.png](./images/automatisches_Einschalten_3.png)
+
+Wähle nun eine Zeit, ca. 10 - 15 min **nachdem** der Strom angeschalten wurde.
+
+![automatisches_Einschalten_4.png](./images/automatisches_Einschalten_4.png)
+
+Drücke nun die ESC Taste, um das Menü zu verlassen und wähle nun den Reiter "Save & Exit" und dann den Eintrag "Save Changes and Reset". Das automatische Einschalten ist nun eingerichtet.
+Um es zu deaktivieren, musst du unter "Advanced" > "S5 RTC Wake Settings", den Wert von "Fixed Time" wieder auf "Disabled" stellen und dann unter "Save & Exit" mit "Save Changes and Reset" die Änderung speichern.
