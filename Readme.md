@@ -21,6 +21,7 @@ Dies ist ideal für den Einsatz bei Austellungen, Messen oder für Werbe- und In
 - [14. PC neu starten](#14-pc-neu-starten)
 - [15. Kiosk-Modus verlassen](#15-kiosk-modus-verlassen)
 - [16. Automatischen Ein-/Ausschalten einrichten (optional)](#16-automatischen-ein-ausschalten-einrichten-optional)
+- [17. Bootreihenfolge einrichten](#17-bootreihenfolge-einrichten)
 
 ## 1. Vorbereitungen
 
@@ -503,3 +504,51 @@ Wähle nun eine Zeit, ca. 10 - 15 min **nachdem** der Strom angeschalten wurde.
 
 Drücke nun die ESC Taste, um das Menü zu verlassen und wähle nun den Reiter "Save & Exit" und dann den Eintrag "Save Changes and Reset". Das automatische Einschalten ist nun eingerichtet.
 Um es zu deaktivieren, musst du unter "Advanced" > "S5 RTC Wake Settings", den Wert von "Fixed Time" wieder auf "Disabled" stellen und dann unter "Save & Exit" mit "Save Changes and Reset" die Änderung speichern.
+
+## 17. Bootreihenfolge einrichten
+
+Damit der Mini-PC nicht spontan versucht vom USB-Stick zu booten, muss nun noch die Bootreihenfolge im BIOS eingerichtet werden.
+
+Dazu zunächst den Mini-PC ausschalten.
+
+Dannach Tastatur anstecken und den Mini-PC einschalten und direkt dannach wiederhol die `Entf` Taste drücken, bis das BIOS erscheint.
+Bei einigen Systemen kann dies auch die `F2` Taste sein.
+
+![Boot_1.jpg](./images/Boot_1.jpg)
+
+Nun mit den Pfeiltasten links/rechts im oberen Reiter den Eintrag "Boot" auswählen.
+
+![Boot_2.jpg](./images/Boot_2.jpg)
+
+Hier nun mit den Pfeiltasten oben/unten den Eintrag mit dem USB-Stick anwählen.
+Je nach USB-Stick kann dieser anders benannt sein. In der Regel trägt er den Namen des Herstellers z.B. "Intenso".
+
+![Boot_3.jpg](./images/Boot_3.jpg)
+
+Anschließend mit der Eingabetaste (`Enter`) die Bootoptionen für den zuvor angewählten USB-Stick öffnen.
+
+Dort dann mit den Pfeiltasten oben/unten die Option "Disabled" auswählen.
+
+![Boot_4.jpg](./images/Boot_4.jpg)
+
+Nun das ganze noch mit der Eingabetaste (`Enter`) bestätigen.
+
+Der Eintrag mit dem USB-Stick sollte nun nicht mehr in der Liste erscheinen.
+
+![Boot_5.jpg](./images/Boot_5.jpg)
+
+Das gleiche Verfahren auch für den Eintrag für den USB-Stick durchführen, welcher mit "UEFI:" beginnt.
+
+Anschließend müssen die Einstellungen noch gespeichert und der Mini-PC neu gestartet werden.
+
+Dazu mit den Pfeiltasten links/rechts im oberen Reiter "Save & Exit" auswählen.
+
+![Boot_6.jpg](./images/Boot_6.jpg)
+
+Hier nun den Eintrag "Save Changes and Reset" mit den Pfeiltasten oben/unten anwählen und mit der Eingabetaste bestätigen.
+
+![Boot_7.jpg](./images/Boot_7.jpg)
+
+Nun nochmals mit den Pfeiltasten links/rechts "Yes" auswählen und mit der Eingabetaste bestätigen.
+
+Der Mini-PC startet anschließend neu und wird nicht noch einmal versuchen vom USB-Stick zu booten.
